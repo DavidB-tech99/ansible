@@ -7,7 +7,11 @@
       shell: lsblk
       register: listing_HD
 
+    - name: Debug listing_HD
+      debug:
+        var: listing_HD
+
     - name: testing the debug multi line output
       debug: 
-        var: "Voici les partition {{ listing_HD.stdout_lines }}"
+        msg: "Voici les partition {{ listing_HD.stdout_lines }}"
 
