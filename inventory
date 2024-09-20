@@ -8,10 +8,3 @@ it002
 
 [server]
 srv-dc01
-
-[linux:children]
-workstation
-it
-
-[windows:children]
-Server
