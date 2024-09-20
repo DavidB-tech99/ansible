@@ -1,5 +1,5 @@
 [workstation]
-wrk001		ansible_connection=ssh	ansible_user=ansible
+wrk001
 wrk002		ansible_connection=ssh	ansible_user=ansible
 
 [it]
