@@ -1,5 +1,0 @@
-plugin: virtualbox
-running_only: yes
-groups:
-  workstation: "'workstation' in (inventory_hostname)"
-  it: "'it' in (inventory_hostname)"

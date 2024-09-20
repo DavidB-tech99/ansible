@@ -1,0 +1,25 @@
+[workstation]
+wrk001		ansible_connection=ssh	ansible_user=ansible
+wrk002		ansible_connection=ssh	ansible_user=ansible
+
+[it]
+it001
+it002
+
+[server]
+srv-dc01
+
+[linux:children]
+workstation
+it
+
+[windows:children]
+Server
+
+[all:vars]
+ansible_connection=ssh
+all_file=/home/ansible/all_file
+[workstation:vars]
+web_file=/home/ansible/index.html
+[server:vars]
+ha_config=/home/ansible/haproxy.cfg
