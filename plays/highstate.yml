@@ -9,5 +9,5 @@
 
     - name: testing the debug multi line output
       debug: 
-        msg: "Voici les partition {{ listing_HD.stdout_lines }}"
+        var: "Voici les partition {{ listing_HD.stdout_lines }}"
 
