@@ -15,11 +15,3 @@ it
 
 [windows:children]
 Server
-
-[all:vars]
-ansible_connection=ssh
-all_file=/home/ansible/all_file
-[workstation:vars]
-web_file=/home/ansible/index.html
-[server:vars]
-ha_config=/home/ansible/haproxy.cfg
